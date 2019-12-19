@@ -14,8 +14,12 @@ class CreateTokenStatisticsTable extends Migration
     public function up()
     {
         Schema::create('token_statistics', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->timestamps();
+            $table->unsignedBigInteger('date')->index();
+
+            $table->unsignedBigInteger('token_id')->nullable();
+            $table->string('ip_address');
+            $table->boolean('success')->default(false);
+            $table->json('request');
         });
     }
 
