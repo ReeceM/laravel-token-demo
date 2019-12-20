@@ -11,8 +11,6 @@ use Illuminate\Support\Str;
 
 class TokenUserProvider extends EloquentUserProvider
 {
-    use LogsToken;
-
     /**
      * Retrieve a user by the given credentials.
      *
