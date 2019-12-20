@@ -43,9 +43,15 @@ return [
 
         'api' => [
             'driver' => 'token',
-            'provider' => 'users',
-            'hash' => false,
+            'provider' => 'tokens',
+            'hash' => true,
         ],
+
+        'token' => [
+            'driver' => 'token',
+            'provider' => 'tokens',
+            'hash' => true,
+        ]
     ],
 
     /*
@@ -71,10 +77,12 @@ return [
             'model' => App\User::class,
         ],
 
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
+        'tokens' => [
+            'driver' => 'token-driver',
+            'model' => \App\Token::class,
+            // 'input_key' => '',
+            // 'storage_key' => '',
+        ],
     ],
 
     /*
