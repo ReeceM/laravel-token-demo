@@ -1,5 +1,5 @@
 {
-    "name": "reecem/token-api-app",
+    "name": "reecem/laravel-token-demo",
     "type": "project",
     "description": "Demo for custom API Token authentication",
     "keywords": [
