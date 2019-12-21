@@ -12,6 +12,25 @@ The authentication method behind this app is that you get the API token and it i
 
 The method for authenticating the users tokens actually extends the default Laravel token auth.
 
+## Installation
+
+You can install the package via composer:
+
+```bash
+git clone https://github.com/ReeceM/laravel-token-demo.git
+```
+
+Then you want to install the composer files:
+
+```bash
+composer install
+```
+
+Make sure you have a database and settings like the dev.to article explains then run:
+
+```bash
+php artisan migrate
+```
 
 ### Changelog
 
