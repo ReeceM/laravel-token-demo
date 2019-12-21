@@ -18,6 +18,12 @@ class EventServiceProvider extends ServiceProvider
         Registered::class => [
             SendEmailVerificationNotification::class,
         ],
+        \App\Events\Auth\TokenAuthenticated::class => [
+            \App\Listeners\Auth\AuthenticatedTokenLog::class,
+        ],
+        \App\Events\Auth\TokenFailed::class => [
+            \App\Listeners\Auth\FailedTokenLog::class,
+        ],
     ];
 
     /**
