@@ -2,7 +2,7 @@
 
 This is the demo repo for the associated dev.to article and tutorial.
 
-Please find it here on dev.to, [Custom Token Authentication for Laravel](https://dev.to)
+Please find it here on dev.to, [Custom Token Authentication for Laravel](https://dev.to/reecem/custom-token-authentication-for-laravel-2aml)
 
 ## About
 
